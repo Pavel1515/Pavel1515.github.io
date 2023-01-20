@@ -1,0 +1,379 @@
+@font-face {
+  font-family: "Montserrat Semibold";
+  src: url("../fonts/ofont.ru_Montserrat.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+// font-family: 'Montserrat Regular';
+// font-family: "Montserrat Medium";
+
+$colors: white;
+$yellow: #987b47;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wraper {
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 692px;
+  position: absolute;
+  width: 100%;
+  .slider {
+    top: 0;
+    left: 0;
+    .slick-list {
+      overflow: hidden;
+    }
+    .slick-track {
+      display: flex;
+      height: 692px;
+    }
+    .slick-current {
+      width: 100%;
+      height: 100%;
+    }
+    .slick-active {
+      transition: all 1s 1s;
+      transform: scale(1.2);
+    }
+  }
+}
+.black {
+  top: 0;
+  left: 0;
+  height: 692px;
+  z-index: 2;
+  background-color: black;
+  width: 100%;
+  opacity: 0.3;
+  position: absolute;
+}
+header {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 100px;
+  border-bottom: 3px solid rgb(83, 92, 100, 0.5);
+  .container {
+    padding-top: 24px;
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    nav {
+      margin-left: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      a {
+        text-decoration: none;
+        margin-right: 40px;
+        font-family: "Montserrat";
+        color: $colors;
+        font-size: 16px;
+        cursor: pointer;
+        font-weight: 400;
+        &:hover {
+          transition: all 1s;
+          color: yellow;
+        }
+      }
+    }
+    .tel {
+      a {
+        text-decoration: none;
+        color: $colors;
+        cursor: pointer;
+        &:hover {
+          transition: all 1s;
+          color: $yellow;
+        }
+      }
+    }
+  }
+}
+main {
+  position: relative;
+  z-index: 10;
+  h1 {
+    margin-top: 110px;
+    margin-left: 60px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 22px;
+    max-width: 490px;
+    font-family: "Montserrat Semibold";
+    color: #ffffff;
+  }
+  p {
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 295px;
+    margin-bottom: 55px;
+    margin-left: 60px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Montserrat Regular";
+  }
+  form {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 60px;
+    background: #252525;
+    border-radius: 2px;
+    height: 112px;
+    width: 815px;
+    input {
+      margin-top: 30px;
+      height: 38px;
+      max-width: 200px;
+      font-size: 14px;
+      border: none;
+      outline: none;
+      background-color: #252525;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+      color: rgba(166, 166, 166, 0.6);
+      padding: 10px 0;
+      font-family: "Montserrat Regular";
+      transition: 0.3s;
+    }
+    .button {
+      width: 310px;
+      height: 46px;
+      border-radius: 2px;
+      white-space: nowrap;
+      background-color: #ffc359;
+      color: black;
+      font-size: 14px;
+      padding: 1em 1.6em;
+    }
+  }
+}
+.hero {
+  position: relative;
+  margin-bottom: 150px;
+  margin-top: 250px;
+  background-color: white;
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+    h2 {
+      font-size: 36px;
+      line-height: 44px;
+      color: #252525;
+      margin-bottom: 44px;
+      font-family: "Montserrat Semibold";
+    }
+    .subtitle {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 30px;
+      color: rgba(0, 0, 0, 0.7);
+      max-width: 660px;
+      font-family: "Montserrat Regular";
+    }
+    .sale-list {
+      margin: 0 auto;
+      margin-top: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      width: 1100px;
+      .sale-list-item {
+        margin-top: 30px;
+        padding: 25px 30px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        border-radius: 2px;
+        img {
+          margin-right: 30px;
+        }
+        .sale-list-item-inner {
+          display: flex;
+          flex-direction: column;
+          max-width: 360px;
+          .title {
+            font-family: "Montserrat Semibold";
+            font-size: 20px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+    .mt {
+      margin-top: 60px;
+    }
+    .feature-list {
+      display: grid;
+      grid-gap: 30px;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      .feature-list-item {
+        padding: 20px 25px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        border-radius: 2px;
+        img {
+          margin-right: 30px;
+        }
+        .title {
+          font-family: "Montserrat Medium";
+          font-size: 18px;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+}
+.product {
+  background-color: black;
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+    h2 {
+      padding-top: 100px;
+      font-family: "Montserrat Semibold";
+      font-size: 30px;
+      color: #f5f5f5;
+    }
+    .subtitle {
+      margin: 22px 0;
+      color: rgba(255, 255, 255, 0.8);
+      width: 612px;
+      opacity: 0.7;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 20px;
+      font-family: "Montserrat Regular";
+    }
+    .flex_product {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding-top: 30px;
+      .item {
+        display: flex;
+        flex-direction: column;
+        img {
+          width: 539px;
+          height: 280px;
+          border: 2px solid white;
+        }
+
+        h3 {
+          margin-top: 30px;
+          padding-bottom: 30px;
+          display: flex;
+          font-family: "Montserrat Semibold";
+          font-size: 18px;
+          color: #ddd;
+          .name {
+            font-family: "Montserrat Semibold";
+            color: #f2c26b;
+            font-size: 18px;
+          }
+          .metr {
+            font-family: "Montserrat Regular";
+            color: #b6b6b6;
+            font-size: 18px;
+            margin-left: 22px;
+          }
+          border-bottom: 1px solid#f2c26b;
+        }
+        .price {
+          font-family: "Montserrat Medium";
+          font-size: 16px;
+          color: #bbbbbb;
+          margin: 16px 0 11px;
+        }
+        .srock {
+          margin-top: 10px;
+          font-family: "Montserrat Medium";
+          font-size: 14px;
+          color: #b5b5b5;
+          margin-bottom: 60px;
+        }
+      }
+    }
+  }
+}
+.form-section {
+  height: 274px;
+  background: #252525;
+  padding-top: 70px;
+  .container {
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+    margin: 0 auto;
+    .one_wraper {
+      width: 50%;
+      h2 {
+        font-size: 25px;
+        font-family: "Montserrat Semibold";
+        line-height: 30px;
+        margin-bottom: 15px;
+        color: #f5f5f5;
+      }
+      p {
+        color: #848484;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 30px;
+        max-width: 660px;
+        font-family: "Montserrat Regular";
+      }
+    }
+    .two_wraper {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      input {
+        width: 460px;
+        border: none;
+        margin-bottom: 30px;
+        outline: none;
+        background-color: #252525;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        font-size: 14px;
+        color: rgba(166, 166, 166, 0.6);
+        padding: 10px 0;
+        transition: 0.3s;
+        font-family: "Montserrat Regular";
+      }
+      .button {
+        position: relative;
+        left: 40%;
+        margin-left: -130px;
+        display: block;
+        cursor: pointer;
+        width: 260px;
+        text-align: center;
+        height: 46px;
+        background-color: #ffc359;
+        background-color: #ffc359;
+        color: black;
+        font-size: 14px;
+        font-family: "Montserrat Semibold";
+        border: none;
+        cursor: pointer;
+        border-radius: 2px;
+        &:hover {
+          transition: 0.9s;
+          background-color: white;
+        }
+      }
+    }
+  }
+}
+.drawing{
+  background-color: white;
+}
