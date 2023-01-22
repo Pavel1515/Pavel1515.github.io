@@ -6,3 +6,14 @@ $(document).ready(function () {
     autoplaySpeed: 2000,
   });
 });
+$(document).ready(function () {
+  $(".works_slider").slick({
+    dots: false,
+    infinite: true,
+    autoplay: true,
+    speed: 1000,
+    autoplaySpeed: 2000,
+    fade: true,
+    cssEase: "linear",
+  });
+});
