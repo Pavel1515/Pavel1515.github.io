@@ -81,7 +81,7 @@ header {
   border-bottom: 3px solid rgba(83, 92, 100, 0.5);
 }
 header .container {
-  padding-top: 44px;
+  padding-top: 35px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -112,16 +112,13 @@ header .container nav a {
 }
 header .container nav a:hover {
   transition: all 1s;
-  color: yellow;
+  color: #f2c26b;
 }
 header .container .tel a {
+  font-family: "Montserrat Semibold";
   text-decoration: none;
-  color: white;
+  color: #f2c26b;
   cursor: pointer;
-}
-header .container .tel a:hover {
-  transition: all 1s;
-  color: #ffc359;
 }
 
 main {
@@ -129,7 +126,6 @@ main {
   z-index: 10;
 }
 main h1 {
-  margin-top: 110px;
   font-weight: 600;
   font-size: 36px;
   line-height: 44px;
@@ -286,10 +282,14 @@ main form .button {
   display: flex;
   flex-direction: column;
 }
+.product .flex_product .item:hover img {
+  border: 3px solid #f2c26b;
+}
 .product .flex_product .item img {
+  transition: all 1s;
   width: 539px;
   height: 280px;
-  border: 2px solid white;
+  border: 3px solid #ffffff;
 }
 .product .flex_product .item h3 {
   margin-top: 30px;

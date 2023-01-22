@@ -80,7 +80,7 @@ header {
   height: 100px;
   border-bottom: 3px solid rgb(83, 92, 100, 0.5);
   .container {
-    padding-top: 44px;
+    padding-top: 35px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -108,19 +108,16 @@ header {
         font-weight: 400;
         &:hover {
           transition: all 1s;
-          color: yellow;
+          color: #f2c26b;
         }
       }
     }
     .tel {
       a {
+        font-family: "Montserrat Semibold";
         text-decoration: none;
-        color: $colors;
+        color: #f2c26b;
         cursor: pointer;
-        &:hover {
-          transition: all 1s;
-          color: $yellow;
-        }
       }
     }
   }
@@ -129,7 +126,6 @@ main {
   position: relative;
   z-index: 10;
   h1 {
-    margin-top: 110px;
     font-weight: 600;
     font-size: 36px;
     line-height: 44px;
@@ -149,7 +145,7 @@ main {
   }
   form {
     display: flex;
-    justify-content: space-evenly; 
+    justify-content: space-evenly;
     background: #252525;
     border-radius: 2px;
     height: 112px;
@@ -282,12 +278,18 @@ main {
     flex-wrap: wrap;
     padding-top: 30px;
     .item {
+      &:hover {
+        img {
+          border: 3px solid #f2c26b;
+        }
+      }
       display: flex;
       flex-direction: column;
       img {
+        transition: all 1s;
         width: 539px;
         height: 280px;
-        border: 2px solid white;
+        border: 3px solid #ffffff;
       }
 
       h3 {
